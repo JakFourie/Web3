@@ -1,6 +1,6 @@
 require('dotenv').config()
 const Web3 = require('web3')
-const web3 = new Web3('https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792')
+const web3 = new Web3('https://polygon-mainnet.infura.io/v3/')
 var Tx = require("ethereumjs-tx").Transaction
 var Common = require('ethereumjs-common').default;
 const axios = require('axios');                         //used for getting api data, install with "yarn add axios"
@@ -16,7 +16,7 @@ const commonMatic = Common.forCustomChain(
   'petersburg'
 )
 
-var account = '0x2c9acd7A958C129d472155ab40ae40807B2e5f9B'
+var account = '0x'
 var privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex')
 
 // Read the deployed contract - PolyPUP Bone Token
