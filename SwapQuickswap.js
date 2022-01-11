@@ -2,7 +2,7 @@
 
 require('dotenv').config()
 const Web3 = require('web3')
-const web3 = new Web3('https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792')
+const web3 = new Web3('https://polygon-mainnet.infura.io/v3/')
 var Tx = require("ethereumjs-tx").Transaction
 var Common = require('ethereumjs-common').default;
 const commonMatic = Common.forCustomChain(
@@ -15,7 +15,7 @@ const commonMatic = Common.forCustomChain(
   },
   'petersburg'
 )
-const address = '0x2c9acd7A958C129d472155ab40ae40807B2e5f9B'
+const address = '0x'
 const privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex')
 
 const USDCaddress = '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
