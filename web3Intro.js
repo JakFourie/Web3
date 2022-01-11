@@ -4,9 +4,9 @@ require('dotenv').config()
 
 //Lesson1
 /*const Web3 = require('web3')
-const rpcURL = 'https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792' // Your RPC URL goes here
+const rpcURL = 'https://polygon-mainnet.infura.io/v3/' // Your RPC URL goes here
 const web3 = new Web3(rpcURL)
-const address = '0x2c9acd7A958C129d472155ab40ae40807B2e5f9B' // Your account address goes here
+const address = '0x' // Your account address goes here
 web3.eth.getBalance(address, (err, wei) => {
   balance = web3.utils.fromWei(wei, 'ether')
 })
@@ -26,7 +26,7 @@ contract.methods.balanceOf('0x2c9acd7A958C129d472155ab40ae40807B2e5f9B').call((e
 //Lesson 3
 /*var Tx = require('ethereumjs-tx')
 const Web3 = require('web3')
-const rpcURL = 'https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792' // Your RPC URL goes here
+const rpcURL = 'https://polygon-mainnet.infura.io/v3/' // Your RPC URL goes here
 const web3 = new Web3(rpcURL)
 //console export PRIVATE_KEY='your private key here'
 const privateKey = Buffer.from(process.env.PRIVATE_KEY)
@@ -53,7 +53,7 @@ web3.eth.sendSignedTransaction(raw, (err, txHash) => {
 
 //Lesson5 modified to harvest
 const Web3 = require('web3')
-const web3 = new Web3('https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792')
+const web3 = new Web3('https://polygon-mainnet.infura.io/v3/')
 var Tx = require("ethereumjs-tx").Transaction
 var Common = require('ethereumjs-common').default;
 
@@ -69,7 +69,7 @@ const commonMatic = Common.forCustomChain(
 )
 
 
-const account = '0x2c9acd7A958C129d472155ab40ae40807B2e5f9B'
+const account = '0x'
 const privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex')
 
 // Read the deployed contract - PolyPUP Bone MC
