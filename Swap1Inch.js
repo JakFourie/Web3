@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 const Web3 = require('web3')
-const web3 = new Web3('https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792')
+const web3 = new Web3('https://polygon-mainnet.infura.io/v3/')
 
 const axios = require('axios');                         //used for getting api data, install with "yarn add axios"
 const { ethers } = require('ethers');                   //full ethereum wallet written as a javascript module, documentation here: https://docs.ethers.io/v5/getting-started/
@@ -10,7 +10,7 @@ const { ethers } = require('ethers');                   //full ethereum wallet w
 var privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex');//private key in hex with a leading 0x
 
 // Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/, https://ankr.com, https://infura.io/ or other hosted node providers.
-const MATICprovider = new ethers.providers.JsonRpcProvider('https://polygon-mainnet.infura.io/v3/7a2d659fe6604d0cb3e02cd329626792'); //rpc can be replaced with an ETH or BSC RPC 
+const MATICprovider = new ethers.providers.JsonRpcProvider('https://polygon-mainnet.infura.io/v3/'); //rpc can be replaced with an ETH or BSC RPC 
 const wallet = new ethers.Wallet(privateKey, MATICprovider);//connect the matic provider along with using the private key as a signer
 
 // Read the deployed contract - PolyPUP Bone Token
